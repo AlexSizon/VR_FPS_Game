@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 2277417190578974469}
   - component: {fileID: 1728496245953878796}
   - component: {fileID: 299029795754515504}
+  - component: {fileID: 2910821149366965250}
   m_Layer: 9
   m_Name: AmmoCanvas
   m_TagString: Untagged
@@ -197,3 +198,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DisplayText: {fileID: 1855924953560784703}
+--- !u!225 &2910821149366965250
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4607046973441598481}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

@@ -20,6 +20,11 @@ public class PauseMenu : MonoBehaviour
         gameObject.SetActive(true);
         GameSystem.Instance.StopTimer();
         Controller.Instance.DisplayCursor(true);
+        this.GetComponent<CanvasGroup>().alpha = 1;
+        foreach (Transform child in this.transform)
+        {
+            child.gameObject.SetActive(true);
+        }
     }
 
     public void OpenEpisode()
@@ -37,6 +42,11 @@ public class PauseMenu : MonoBehaviour
         UIAudioPlayer.PlayPositive();
         GameSystem.Instance.StartTimer();
         gameObject.SetActive(false);
+        foreach (Transform child in this.transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+        this.GetComponent<CanvasGroup>().alpha = 0;
         Controller.Instance.DisplayCursor(false);
     }
 
